@@ -14,3 +14,9 @@ class Cars(models.Model):
 
     def __str__(self):
         return f"{self.make} {self.model} {self.year}"
+
+class Customer(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    emial = models.EmailField()
+    phone_number = models.CharField(max_length=15)
