@@ -6,3 +6,7 @@ class Cars(models.Model):
     content = models.TextField()
     image = models.ImageField(null=True, blank=True)
     published_date = models.DateTimeField(auto_now_add=True)
+
+
+    def __str__(self):
+        return self.title
