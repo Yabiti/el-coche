@@ -1,0 +1,9 @@
+.pa{
+    background-color: #007BFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-align: center;
+    color: white;
+}

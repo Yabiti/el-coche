@@ -5,4 +5,4 @@ from .models import Car
 
 class HomePageView(TemplateView):
     model = Car
-    template_name = 'sales/base.html'
+    template_name = 'sales/home.html'
