@@ -7,3 +7,10 @@
     text-align: center;
     color: white;
 }
+
+.head{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    padding: 30px;
+}
