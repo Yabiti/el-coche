@@ -46,49 +46,35 @@ img{
     width: 1700px;
 }
 
-.category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #0078d4;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: auto;
-    padding-top: -200px;
+
+.image-container {
+    position: relative; /* Create a positioning context */
+    width: 100%;       /* Adjust as needed */
 }
 
-.header {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: right;
-}
-
-.filters {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+.image-container img {
     width: 100%;
+    height: auto;      /* Ensure image scales properly */
+}
+
+.category {
+    position: absolute; /* Overlay the category section */
+    top: 20%;           /* Adjust based on how much you want it to overlay */
+    left: 50%;          /* Center horizontally */
+    transform: translateX(-50%); /* Center the div properly */
+    background-color: rgba(0, 0, 255, 0.8); /* Blue background with transparency */
+    padding: 20px;
+    color: white;
+    z-index: 10;        /* Ensure it's above the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for aesthetics */
 }
 
 .filter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 10px 0;
 }
 
-.filter p {
-    margin: 0 0 10px 0;
-    font-weight: bold;
-}
-
-.filter select {
-    padding: 8px;
-    border: none;
+select {
+    padding: 5px;
     border-radius: 5px;
-    font-size: 14px;
-    width: 150px;
+    border: 1px solid #ccc;
 }
