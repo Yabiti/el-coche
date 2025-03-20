@@ -47,34 +47,43 @@ img{
 }
 
 
-.image-container {
-    position: relative; /* Create a positioning context */
-    width: 100%;       /* Adjust as needed */
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;      /* Ensure image scales properly */
-}
-
 .category {
     position: absolute; /* Overlay the category section */
-    top: 20%;           /* Adjust based on how much you want it to overlay */
+    top: 70%;           /* Position near the car's tires */
     left: 50%;          /* Center horizontally */
-    transform: translateX(-50%); /* Center the div properly */
+    transform: translateX(-50%); /* Center horizontally */
     background-color: rgba(0, 0, 255, 0.8); /* Blue background with transparency */
-    padding: 20px;
     color: white;
-    z-index: 10;        /* Ensure it's above the image */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for aesthetics */
+    padding: 30px;      /* Interior spacing */
+    z-index: 10;
+    display: flex;       /* Apply Flexbox to the entire section */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: space-between; /* Distributes space evenly */
+    gap: 20px;           /* Adds spacing between elements */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Aesthetic shadow */
+    width: 95%;          /* Nearly full-width container */
+    max-width: 700px;    /* Restrict maximum size */
+}
+
+.filters {
+    display: flex;       /* Organize filters horizontally */
+    flex-wrap: wrap;     /* Allow wrapping to a new line */
+    gap: 20px;           /* Space between filter elements */
+    justify-content: center; /* Centers filters horizontally */
 }
 
 .filter {
-    margin: 10px 0;
+    display: flex;       /* Apply Flexbox to each filter */
+    flex-direction: column; /* Stack label and dropdown vertically */
+    align-items: center; /* Centers the label and dropdown */
+    flex: 1 1 auto;      /* Ensures responsive sizing */
+    min-width: 150px;    /* Minimum width for each filter */
 }
 
 select {
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 5px;  
     border: 1px solid #ccc;
 }
