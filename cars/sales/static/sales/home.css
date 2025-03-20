@@ -51,10 +51,10 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0078d4; /* Matches the blue color in your reference */
-    color: white; /* Text color */
+    background-color: #0078d4;
+    color: white;
     padding: 20px;
-    border-radius: 10px; /* Rounds the corners for a modern look */
+    border-radius: 10px;
     max-width: 800px;
     margin: auto; 
 }
@@ -68,10 +68,10 @@ img{
 
 .filters {
     display: flex;
-    justify-content: space-around; /* Ensures even spacing */
-    flex-wrap: wrap; /* Wraps filters on smaller screens */
-    gap: 20px; /* Adds consistent spacing between filter blocks */
-    width: 100%; /* Stretches filters across the container */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
 }
 
 .filter {
@@ -90,5 +90,5 @@ img{
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    width: 150px; /* Keeps a consistent dropdown size */
+    width: 150px;
 }
