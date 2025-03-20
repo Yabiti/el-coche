@@ -56,7 +56,7 @@ img{
     border-radius: 10px;
     max-width: 800px;
     margin: auto;
-    margin-bottom: 100px;
+    padding-top: -200px;
 }
 
 .header {
