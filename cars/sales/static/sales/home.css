@@ -47,11 +47,48 @@ img{
     width: 1700px;
 }
 
-.category{
-    background-color: blue;
-    width: 500px;
-    height: auto;
+.category {
     display: flex;
-    gap: 30px;
-    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0078d4; /* Matches the blue color in your reference */
+    color: white; /* Text color */
+    padding: 20px;
+    border-radius: 10px; /* Rounds the corners for a modern look */
+    max-width: 800px;
+    margin: auto; 
+}
+
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around; /* Ensures even spacing */
+    flex-wrap: wrap; /* Wraps filters on smaller screens */
+    gap: 20px; /* Adds consistent spacing between filter blocks */
+    width: 100%; /* Stretches filters across the container */
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.filter select {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 150px; /* Keeps a consistent dropdown size */
 }

@@ -20,38 +20,40 @@
         <img src="{% static 'sales/v8.jpeg' %}">
     </div>
     <div class="category">
-        <p>Find Your Next Car</p>
-        <div class="make">
-        <p>Make</p>
-        <select>
-            <option value="selected">All Makes</option>
-            <option>Vitz</option>
-            <option>Corolla</option>
-            <option>Hyundai</option>
-            <option>BZ4</option>
-        </select>
-        </div>
-        <div class="model">
-            <p>Model</p>
-            <select>
-                <option value="selected">All Models</option>
-                <option>2001</option>
-                <option>2003</option>
-                <option>2005</option>
-                <option>2006</option>
-            </select>
-        </div>
-        <div class="body-type">
-            <p>Body Type</p>
-            <select>
-                <option>All Body Types</option>
-            </select>
-        </div>
-        <div class="location">
-            <p>Location</p>
-            <select>
-                <option>Location</option>
-            </select>
+        <h3 class="header">Find Your Next Car</h3>
+        <div class="filters">
+            <div class="filter">
+                <p>Make</p>
+                <select>
+                    <option>All Makes</option>
+                    <option>Vitz</option>
+                    <option>Corolla</option>
+                    <option>Hyundai</option>
+                    <option>BZ4</option>
+                </select>
+            </div>
+            <div class="filter">
+                <p>Model</p>
+                <select>
+                    <option>All Models</option>
+                    <option>2001</option>
+                    <option>2003</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                </select>
+            </div>
+            <div class="filter">
+                <p>Body Type</p>
+                <select>
+                    <option>All Body Types</option>
+                </select>
+            </div>
+            <div class="filter">
+                <p>Location</p>
+                <select>
+                    <option>Location</option>
+                </select>
+            </div>
         </div>
     </div>
-{% endblock %}
+{% endblock %}    
