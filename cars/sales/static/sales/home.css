@@ -46,3 +46,9 @@
 img{
     width: 1700px;
 }
+
+.category{
+    background-color: white;
+    display: flex;
+    gap: 30px;
+}
